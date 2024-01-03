@@ -13,7 +13,7 @@ class Auth extends CI_Controller
 	{
 		if($this->session->has_userdata('is_admin_login'))
 		{
-			redirect('admin/dashboard');
+			redirect('admin/dashboard/index');
 		}else
 		{
 			redirect('admin/auth/login');
@@ -87,7 +87,7 @@ class Auth extends CI_Controller
 				$data['bg_cover'] = true;
 
 				$this->load->view('admin/includes/_header', $data);
-				$this->load->view('admin/auth/login');
+				$this->load->view('admin/auth/login', $data);
 				$this->load->view('admin/includes/_footer', $data);
 			}
 		}
