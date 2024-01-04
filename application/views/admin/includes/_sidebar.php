@@ -1,7 +1,3 @@
-<?php 
-$cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2); 
-?>  
-
 <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -39,7 +35,7 @@ $cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2);
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -48,7 +44,7 @@ $cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2);
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url('admin/dashboard/index'); ?>" class="nav-link active">
+                <a href="<?php echo base_url('admin/dashboard/index'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v1</p>
                 </a>
@@ -66,7 +62,37 @@ $cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2);
                 </a>
               </li>
             </ul>
-          </li>         
+          </li> 
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa fa-cog"></i>
+              <p>
+                Settings
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url('admin/setting/general'); ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>General Settings</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url('admin/setting/language'); ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Language Settings</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url('admin/setting/meta'); ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Meta Settings</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
           
         </ul>
       </nav>
@@ -76,6 +102,12 @@ $cur_tab = $this->uri->segment(2)==''?'dashboard': $this->uri->segment(2);
   </aside>
 
 <script>
-  $("#<?= $cur_tab ?>").addClass('menu-open');
-  $("#<?= $cur_tab ?> > a").addClass('active');
+  $(document).ready(function(){
+    $('.nav-link').on('click',function(e){
+      e.preventDefault();
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+
 </script>
