@@ -35,7 +35,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
           <li class="nav-item">
-            <a href="<?php echo base_url('admin/dashboard/index'); ?>" class="nav-link">
+            <a href="<?php echo base_url('admin/dashboard'); ?>" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Dashboard</p>
 
@@ -51,19 +51,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo base_url('admin/setting/general'); ?>" class="nav-link">
+                <a href="<?php echo base_url('admin/setting'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>General Settings</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url('admin/setting/language'); ?>" class="nav-link">
+                <a href="<?php echo base_url('admin/language'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Language Settings</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url('admin/setting/meta'); ?>" class="nav-link">
+                <a href="<?php echo base_url('admin/meta'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Meta Settings</p>
                 </a>
