@@ -81,11 +81,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
-    $('.nav-link').on('click',function(e){
-      e.preventDefault();
+    var currentUrl = window.location.href;
+    $('.nav-link').each(function() {
+      if (this.href === currentUrl) {
+        $(this).addClass('active');
+      }
+    });
+
+    // Add active class on click
+    $('.nav-link').on('click', function() {
       $('.nav-link').removeClass('active');
       $(this).addClass('active');
     });
   });
-
 </script>
