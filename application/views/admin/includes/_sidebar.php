@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="<?php echo base_url();?>assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Dummy Project</span>
+      <span class="brand-text font-weight-light">RecentureSoft</span>
     </a>
 
     <!-- Sidebar -->
@@ -14,7 +14,7 @@
           <img src="<?php echo base_url();?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin: Sanjeet</a>
+          <a href="#" class="d-block">Admin</a>
         </div>
       </div>
 
@@ -34,36 +34,14 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
+          <li class="nav-item">
+            <a href="<?php echo base_url('admin/dashboard/index'); ?>" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo base_url('admin/dashboard/index'); ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url('admin/dashboard/index2'); ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo base_url('admin/dashboard/index3'); ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
+              <p>Dashboard</p>
+
+            </a>          
           </li> 
-          <li class="nav-item menu-open">
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa fa-cog"></i>
               <p>
@@ -100,7 +78,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
     $('.nav-link').on('click',function(e){

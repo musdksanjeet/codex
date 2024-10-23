@@ -24,18 +24,14 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?php echo base_url();?>assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="<?php echo base_url();?>assets/plugins/chart.js/Chart.min.js"></script>
+
 <!-- Sparkline -->
 <script src="<?php echo base_url();?>assets/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="<?php echo base_url();?>assets/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?php echo base_url();?>assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="<?php echo base_url();?>assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+
 <!-- daterangepicker -->
 <script src="<?php echo base_url();?>assets/plugins/moment/moment.min.js"></script>
 <script src="<?php echo base_url();?>assets/plugins/daterangepicker/daterangepicker.js"></script>
+
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?php echo base_url();?>assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
@@ -52,8 +48,8 @@
 <script src="<?php echo base_url();?>assets/plugins/raphael/raphael.min.js"></script>
 <script src="<?php echo base_url();?>assets/plugins/jquery-mapael/jquery.mapael.min.js"></script>
 <script src="<?php echo base_url();?>assets/plugins/jquery-mapael/maps/usa_states.min.js"></script>
-<script src="<?php echo base_url();?>assets/dist/js/pages/dashboard2.js"></script>
-<script src="<?php echo base_url();?>assets/dist/js/pages/dashboard3.js"></script>
+
+
 
 </body>
 </html>
